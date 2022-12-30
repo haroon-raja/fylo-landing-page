@@ -1,0 +1,30 @@
+@use '../utils/' as *;
+// HEADER
+.header {
+  padding: rem(24) 0;
+}
+
+// HERO
+.section-hero {
+  padding: rem(90) 0;
+}
+
+// PRODUCTIVE
+.section-productive {
+  padding: rem(90) 0 0 0;
+  background-image: url(../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+// CTA
+.section-cta {
+  padding: rem(54) 0 rem(90);
+  background-color: $color-primary-2;
+}
+
+//FOOTER
+.footer {
+  padding: rem(65) 0;
+  background-color: $color-primary-1;
+}

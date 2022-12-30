@@ -1,0 +1,84 @@
+@use '../utils/' as *;
+.section-productive {
+  &__bg {
+    background-color: $bg-dark;
+    margin-top: rem(-50);
+    padding: rem(45) 0 rem(90);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(87);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text-box {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: rem(14);
+    font-size: clamp(rem(14), rem(12.8) + 0.331vw, rem(16));
+    line-height: rem(22);
+    color: $gray-dark;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__testimonial {
+    background-color: $white;
+    padding: rem(20) rem(25);
+    border-radius: rem(4);
+    box-shadow: $shadow-1;
+    display: flex;
+    flex-direction: column;
+    gap: rem(12);
+
+    &-text {
+      font-size: rem(10);
+      font-size: clamp(rem(10), rem(8.7568) + 0.3315vw, rem(13));
+      line-height: rem(20);
+      letter-spacing: rem(0.4);
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+      gap: rem(8);
+
+      &-image {
+        width: rem(24);
+        height: rem(24);
+        border-radius: 50%;
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        gap: rem(2);
+      }
+
+      &-name {
+        font-size: rem(9);
+        font-size: clamp(rem(9), rem(8.16) + 0.22vw, rem(11));
+        font-weight: 700;
+        color: $color-primary-1;
+        letter-spacing: rem(0.45);
+      }
+
+      &-bio {
+        font-size: rem(6);
+        font-size: clamp(rem(6), rem(5.1712) + 0.22vw, rem(8));
+        color: $color-primary-1;
+        letter-spacing: rem(0.3);
+      }
+    }
+  }
+}

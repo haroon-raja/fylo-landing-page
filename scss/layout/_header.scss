@@ -1,0 +1,27 @@
+@use '../utils/' as *;
+.header {
+  font-family: $font-display;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: rem(24);
+  }
+
+  &__navigation {
+    &-list {
+      display: flex;
+      gap: rem(25);
+      font-size: rem(12);
+      font-size: clamp(rem(12), rem(10.4) + 0.44vw, rem(16));
+    }
+
+    &-link {
+      &:link,
+      &:visited {
+        color: $color-primary-1;
+      }
+    }
+  }
+}

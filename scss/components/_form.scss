@@ -1,0 +1,30 @@
+@use '../utils/' as *;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: rem(15) rem(20);
+    border: 1px solid $color-primary-1;
+    border-radius: 3px;
+    font-size: rem(12);
+    color: $gray-dark;
+    font-family: $font-display;
+    box-shadow: 2px 3px 6px rgba($black, 0.16);
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:focus:invalid {
+      border: 1px solid $accent-4;
+    }
+
+    &::placeholder {
+      color: $gray-light-2;
+    }
+  }
+}

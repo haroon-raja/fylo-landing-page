@@ -1,0 +1,35 @@
+@use '../utils/' as *;
+.section-cta {
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+    padding: 0 rem(20);
+  }
+
+  &__text {
+    font-size: rem(14);
+    font-size: clamp(rem(14), rem(13.1712) + 0.2209vw, rem(16));
+    color: $white;
+    line-height: rem(21);
+  }
+
+  &__cta {
+    padding: 0 rem(40);
+  }
+
+  &__input {
+    border: 1px solid transparent;
+    box-shadow: 2px 3px 6px rgba($color-primary-1, 0.15);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
