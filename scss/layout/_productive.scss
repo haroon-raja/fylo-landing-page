@@ -1,11 +1,5 @@
 @use '../utils/' as *;
 .section-productive {
-  &__bg {
-    background-color: $bg-dark;
-    margin-top: rem(-50);
-    padding: rem(45) 0 rem(90);
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -13,7 +7,7 @@
 
     @include breakpoint-mobile(medium) {
       display: grid;
-      grid-template-columns: 1.4fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
       gap: rem(50);
       align-items: center;
     }

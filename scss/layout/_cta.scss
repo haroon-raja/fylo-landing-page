@@ -18,7 +18,15 @@
     display: flex;
     flex-direction: column;
     gap: rem(17);
-    padding-right: rem(60);
+    padding: 0 rem(20);
+
+    @include breakpoint-mobile(medium) {
+      padding: 0;
+    }
+
+    @include breakpoint-mobile(large) {
+      padding-right: rem(70);
+    }
   }
 
   &__text {
@@ -29,22 +37,16 @@
   }
 
   &__cta {
-    padding: 0 rem(40);
+    padding: 0 rem(20);
 
     @include breakpoint-mobile(medium) {
       padding: 0;
     }
   }
 
-  &__form {
-    @include breakpoint-mobile(medium) {
-      padding-right: rem(50);
-    }
-  }
-
   &__btn {
     @include breakpoint-mobile(medium) {
-      width: 40%;
+      width: max-content;
     }
   }
 

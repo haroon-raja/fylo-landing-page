@@ -11,10 +11,11 @@
 
 // PRODUCTIVE
 .section-productive {
-  padding: rem(90) 0 0 0;
+  padding: rem(90) 0;
   background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 
   @include breakpoint-mobile(small) {
     background-image: url(../images/bg-curve-desktop.svg);

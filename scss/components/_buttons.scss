@@ -1,7 +1,7 @@
 @use '../utils/' as *;
 
 .btn {
-  display: block;
+  display: inline-block;
   border: none;
   width: 100%;
   padding: rem(15) rem(30);

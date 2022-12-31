@@ -75,7 +75,7 @@ body {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   border: none;
   width: 100%;
   padding: 0.9375rem 1.875rem;
@@ -214,11 +214,6 @@ body {
   }
 }
 
-.section-productive__bg {
-  background-color: hsl(240deg, 75%, 98%);
-  margin-top: -3.125rem;
-  padding: 2.8125rem 0 5.625rem;
-}
 .section-productive__content {
   display: flex;
   flex-direction: column;
@@ -227,7 +222,7 @@ body {
 @media screen and (min-width: 50em) {
   .section-productive__content {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 3.125rem;
     align-items: center;
   }
@@ -351,7 +346,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.0625rem;
-  padding-right: 3.75rem;
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 50em) {
+  .section-cta__text-box {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 68.75em) {
+  .section-cta__text-box {
+    padding-right: 4.375rem;
+  }
 }
 .section-cta__text {
   font-size: 0.875rem;
@@ -360,7 +365,7 @@ body {
   line-height: 1.3125rem;
 }
 .section-cta__cta {
-  padding: 0 2.5rem;
+  padding: 0 1.25rem;
 }
 @media screen and (min-width: 50em) {
   .section-cta__cta {
@@ -368,13 +373,8 @@ body {
   }
 }
 @media screen and (min-width: 50em) {
-  .section-cta__form {
-    padding-right: 3.125rem;
-  }
-}
-@media screen and (min-width: 50em) {
   .section-cta__btn {
-    width: 40%;
+    width: max-content;
   }
 }
 .section-cta__input {
@@ -486,10 +486,11 @@ body {
 }
 
 .section-productive {
-  padding: 5.625rem 0 0 0;
+  padding: 5.625rem 0;
   background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 @media screen and (min-width: 37.5em) {
   .section-productive {
