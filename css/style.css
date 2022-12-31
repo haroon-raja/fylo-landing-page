@@ -109,6 +109,7 @@ body {
 .btn-text:hover, .btn-text:active {
   color: hsl(170deg, 63%, 66%);
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -159,6 +160,20 @@ body {
   flex-direction: column;
   gap: 2.5rem;
 }
+@media screen and (min-width: 50em) {
+  .section-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125rem;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 50em) {
+  .section-hero__img-box {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
 .section-hero__img {
   width: 100%;
 }
@@ -168,11 +183,28 @@ body {
   gap: 1.875rem;
   text-align: center;
 }
+@media screen and (min-width: 50em) {
+  .section-hero__text-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+  }
+}
 .section-hero__text {
   font-size: 0.875rem;
   font-size: clamp(0.875rem, 0.8rem + 0.331vw, 1.0625rem);
   line-height: 1.5rem;
   color: hsl(243deg, 87%, 12%);
+}
+@media screen and (min-width: 37.5em) {
+  .section-hero__form {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  .section-hero__form-btn {
+    width: 70%;
+  }
 }
 
 .section-productive__bg {

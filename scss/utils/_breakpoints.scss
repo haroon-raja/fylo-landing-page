@@ -10,7 +10,13 @@
 
 @mixin breakpoint-mobile($breakpoint) {
   @if $breakpoint == medium {
-    @media screen and (min-width: em(900)) {
+    @media screen and (min-width: em(800)) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small {
+    @media screen and (min-width: em(600)) {
       @content;
     }
   }
