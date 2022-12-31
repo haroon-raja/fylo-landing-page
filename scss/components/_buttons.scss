@@ -26,10 +26,20 @@
     border-bottom: 1px solid currentColor;
     padding: 0 0 rem(6) 0;
     gap: rem(8);
+    transition: all 0.3s;
+  }
+
+  &__icon {
+    width: rem(16);
+    height: rem(16);
+    fill: currentColor;
   }
 
   &:hover,
   &:active {
     color: $accent-3;
+  }
+
+  &:hover &__icon {
   }
 }

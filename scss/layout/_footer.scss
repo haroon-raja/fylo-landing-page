@@ -7,19 +7,30 @@
     gap: rem(32);
   }
 
+  &__logo {
+    width: rem(105);
+    height: rem(30);
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: rem(16);
+      color: $white;
+      font-weight: 400;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $accent-5;
+    }
+  }
+
   &__contacts {
     display: flex;
     flex-direction: column;
     gap: rem(32);
-
-    &-link {
-      &:link,
-      &:visited {
-        font-size: rem(16);
-        color: $white;
-        font-weight: 400;
-      }
-    }
   }
 
   &__phone-mail-box {
@@ -28,21 +39,31 @@
     gap: rem(16);
   }
 
-  &__phone-mail {
+  &__phone,
+  &__mail {
     display: flex;
     align-items: center;
     gap: rem(16);
+  }
+
+  &__phone {
+    &-icon {
+      width: rem(18);
+      height: rem(18);
+    }
+  }
+
+  &__mail {
+    &-icon {
+      width: rem(20);
+      height: rem(16);
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: rem(16);
-
-    &-link {
-      color: $white;
-      font-size: rem(16);
-    }
   }
 
   &__social {
@@ -50,5 +71,25 @@
     gap: rem(10);
     align-items: center;
     justify-content: center;
+
+    &-icon {
+      width: rem(30);
+      height: rem(30);
+      fill: $gray-light-3;
+      transition: all 0.3s;
+
+      &:hover {
+        fill: $accent-5;
+      }
+    }
+  }
+
+  &__attribution {
+    color: $white;
+    font-size: rem(14);
+    font-size: clamp(rem(14), rem(12.8) + 0.331vw, rem(16));
+    text-align: center;
+    letter-spacing: rem(0.24);
+    line-height: rem(20);
   }
 }
