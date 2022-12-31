@@ -217,11 +217,32 @@ body {
   flex-direction: column;
   gap: 5.4375rem;
 }
+@media screen and (min-width: 50em) {
+  .section-productive__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125rem;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 50em) {
+  .section-productive__img-box {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
 .section-productive__img {
   width: 100%;
 }
 .section-productive__text-box {
   text-align: center;
+}
+@media screen and (min-width: 50em) {
+  .section-productive__text-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+  }
 }
 .section-productive__text {
   font-size: 0.875rem;
@@ -232,6 +253,11 @@ body {
 .section-productive__btn {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 50em) {
+  .section-productive__btn {
+    justify-content: start;
+  }
 }
 .section-productive__testimonial {
   background-color: hsl(0deg, 0%, 100%);
@@ -387,7 +413,12 @@ body {
   padding: 5.625rem 0 0 0;
   background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+}
+@media screen and (min-width: 37.5em) {
+  .section-productive {
+    background-image: url(../images/bg-curve-desktop.svg);
+  }
 }
 
 .section-cta {

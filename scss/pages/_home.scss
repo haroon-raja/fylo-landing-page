@@ -14,7 +14,11 @@
   padding: rem(90) 0 0 0;
   background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+
+  @include breakpoint-mobile(small) {
+    background-image: url(../images/bg-curve-desktop.svg);
+  }
 }
 
 // CTA
