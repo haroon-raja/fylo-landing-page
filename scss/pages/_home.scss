@@ -25,6 +25,10 @@
 .section-cta {
   padding: rem(54) 0 rem(90);
   background-color: $color-primary-2;
+
+  @include breakpoint-mobile(medium) {
+    padding: rem(90) 0;
+  }
 }
 
 //FOOTER

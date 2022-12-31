@@ -5,12 +5,20 @@
     display: flex;
     flex-direction: column;
     gap: rem(24);
+
+    @include breakpoint-mobile(medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      text-align: left;
+      gap: rem(150);
+    }
   }
   &__text-box {
     display: flex;
     flex-direction: column;
-    gap: rem(16);
-    padding: 0 rem(20);
+    gap: rem(17);
+    padding-right: rem(60);
   }
 
   &__text {
@@ -22,6 +30,16 @@
 
   &__cta {
     padding: 0 rem(40);
+
+    @include breakpoint-mobile(medium) {
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    @include breakpoint-mobile(medium) {
+      width: 40%;
+    }
   }
 
   &__input {

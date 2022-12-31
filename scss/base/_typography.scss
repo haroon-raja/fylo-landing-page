@@ -20,7 +20,6 @@ body {
   font-size: rem(16);
   font-size: clamp(rem(16), rem(6.0544) + 2.6519vw, rem(40));
   font-weight: 700;
-  line-height: rem(24);
 
   &--dark {
     color: $color-primary-1;
