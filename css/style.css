@@ -286,7 +286,6 @@ body {
 .footer__link:link, .footer__link:visited {
   font-size: 1rem;
   color: hsl(0deg, 0%, 100%);
-  font-weight: 400;
   transition: all 0.3s;
 }
 .footer__link:hover, .footer__link:active {
