@@ -36,6 +36,12 @@
     }
   }
 
+  &__form {
+    @include breakpoint-mobile(medium) {
+      padding-right: rem(50);
+    }
+  }
+
   &__btn {
     @include breakpoint-mobile(medium) {
       width: 40%;
