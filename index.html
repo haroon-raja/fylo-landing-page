@@ -50,7 +50,7 @@
         <div class="section-hero__img-box">
           <img
             src="images/illustration-1.svg"
-            alt="Hero Illsutration Image "
+            alt=""
             class="section-hero__img"
             width="1133"
             height="839"
@@ -70,9 +70,12 @@
               class="form__input section-hero__form-input"
               type="email"
               placeholder="Enter your email..."
+              aria-label="Email Address"
               required
             />
-            <button class="button section-hero__form-btn">Get Started</button>
+            <button type="submit" class="button section-hero__form-btn">
+              Get Started
+            </button>
           </form>
         </div>
       </section>
@@ -84,7 +87,7 @@
           <div class="section-productive__img-box">
             <img
               src="images/illustration-2.svg"
-              alt="Illustration of two men and one woman with white board"
+              alt=""
               class="section-productive__img"
               width="1078"
               height="813"
@@ -129,7 +132,7 @@
             <div class="section-productive__testimonial-user">
               <img
                 src="images/avatar-testimonial.jpg"
-                alt="Photo of user Kyle Burton"
+                alt="Kyle Burton"
                 class="section-productive__testimonial-user-image"
                 width="125"
                 height="125"
@@ -167,9 +170,10 @@
                 class="form__input section-cta__input"
                 type="email"
                 placeholder="email@example.com"
+                aria-label="Email Address"
                 required
               />
-              <button class="button section-cta__btn">
+              <button type="submit" class="button section-cta__btn">
                 Get Started For Free
               </button>
             </form>
@@ -228,19 +232,37 @@
           </ul>
         </div>
         <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="Facebook">
+          <a
+            href="https://facebook.com"
+            rel="noopener"
+            target="_blank"
+            class="footer__social-link"
+            aria-label="Facebook"
+          >
             <svg class="footer__social-icon">
               <use xlink:href="images/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
 
-          <a href="#" class="footer__social-link" aria-label="Twitter">
+          <a
+            href="https://twitter.com"
+            rel="noopener"
+            target="_blank"
+            class="footer__social-link"
+            aria-label="Twitter"
+          >
             <svg class="footer__social-icon">
               <use xlink:href="images/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
 
-          <a href="#" class="footer__social-link" aria-label="Instagram">
+          <a
+            href="https://instagram.com"
+            rel="noopener"
+            target="_blank"
+            class="footer__social-link"
+            aria-label="Instagram"
+          >
             <svg class="footer__social-icon">
               <use xlink:href="images/sprite.svg#icon-instagram"></use>
             </svg>
@@ -251,6 +273,7 @@
           <a
             class="footer__link"
             href="https://www.frontendmentor.io?ref=challenge"
+            rel="noopener"
             target="_blank"
           >
             Frontend Mentor
@@ -259,6 +282,7 @@
           <a
             class="footer__link"
             href="https://github.com/haroon-raja"
+            rel="noopener"
             target="_blank"
           >
             Haroon Mustafa
