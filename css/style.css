@@ -150,7 +150,13 @@ body {
   align-items: center;
 }
 .header__logo {
-  height: 1.5rem;
+  width: 5rem;
+  height: auto;
+}
+@media screen and (min-width: 50em) {
+  .header__logo {
+    width: 10.375rem;
+  }
 }
 .header__navigation-list {
   display: flex;
@@ -183,6 +189,7 @@ body {
 }
 .section-hero__img {
   width: 100%;
+  height: auto;
 }
 .section-hero__text-box {
   display: flex;
@@ -235,6 +242,7 @@ body {
 }
 .section-productive__img {
   width: 100%;
+  height: auto;
 }
 .section-productive__text-box {
   text-align: center;

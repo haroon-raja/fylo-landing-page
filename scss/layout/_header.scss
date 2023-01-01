@@ -6,7 +6,12 @@
   align-items: center;
 
   &__logo {
-    height: rem(24);
+    width: rem(80);
+    height: auto;
+
+    @include breakpoint-mobile(medium) {
+      width: rem(166);
+    }
   }
 
   &__navigation {
