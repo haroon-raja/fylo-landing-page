@@ -1,6 +1,6 @@
 @use '../utils/' as *;
 
-.btn {
+.button {
   display: inline-block;
   border: none;
   width: 100%;
@@ -17,10 +17,12 @@
 
   &:hover {
     transform: translateY(-2px) scale(1.03);
+    box-shadow: 3px 4px 8px rgba($black, 0.2);
   }
 
   &:active {
     transform: translateY(-1px) scale(1.01);
+    box-shadow: 2px 3px 6px rgba($black, 0.2);
   }
 }
 
