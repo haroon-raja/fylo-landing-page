@@ -16,7 +16,11 @@
 
   &__logo {
     width: rem(105);
-    height: rem(30);
+    height: auto;
+
+    @include breakpoint-mobile(medium) {
+      width: rem(135);
+    }
   }
 
   &__link {
